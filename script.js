@@ -1,9 +1,3 @@
-// document.getElementById('loan-form').addEventListener('submit',function(e){
-//      document.getElementById('results').style.display='none';
-//         document.getElementById('loading').style.display='block';
-//     setTimeout(claculate,2000);
-//     e.preventDefault();
-// });
 document.getElementById('loan-form').addEventListener('submit',function(e){
 
     const amount=document.getElementById('loan-ammount').value;
@@ -62,12 +56,11 @@ function showAlert(error){
 }
 document.getElementById('clear-btn').addEventListener('click', function(){
 
-    // clear input fields
+
     document.getElementById('loan-ammount').value='';
     document.getElementById('interest').value='';
     document.getElementById('years').value='';
 
-    // hide results
     document.getElementById('results').style.display='none';
 
 });
